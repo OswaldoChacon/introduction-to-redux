@@ -5,3 +5,7 @@ export interface Action {
     // parametros de la acción
     payload?: any
 }
+
+export interface Reducer<T> {
+    (state: T, action: Action): T
+}
